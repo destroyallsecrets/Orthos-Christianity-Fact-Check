@@ -22,6 +22,26 @@ export const FRAMEWORKS: FrameworkItem[] = [
 
 export const SECTIONS: SectionContent[] = [
   {
+    id: 'origins',
+    title: 'The Historical Jesus',
+    subtitle: 'The "Pagan Copycat" Myth',
+    content: [
+      {
+        heading: "Historical Existence",
+        text: "Virtually every serious historian of antiquity, whether Christian or atheist (e.g., Bart Ehrman), agrees that Jesus of Nazareth existed, was baptized by John, and was crucified by Pilate."
+      },
+      {
+        heading: "Pagan Parallels",
+        text: "Common claims that Jesus was a copy of Horus or Mithras are rejected by Egyptologists and scholars of Roman religion. The alleged 'parallels' (e.g., born of a virgin on Dec 25th) do not actually exist in the original primary sources for those deities."
+      },
+      {
+        heading: "Cultural Context",
+        text: "Christianity emerged from a strictly monotheistic Jewish context which found pagan mythology abhorrent, making it extremely unlikely they would consciously borrow 'dying-and-rising god' tropes."
+      }
+    ],
+    imagePlaceholder: "https://picsum.photos/800/602?grayscale"
+  },
+  {
     id: 'doctrine',
     title: 'Development of Doctrine',
     subtitle: 'The "Late Invention" Myth',
@@ -102,10 +122,11 @@ You are an expert historian and theologian residing within the 'Orthos' digital 
 Your goal is to answer user questions about Christian history and theology based strictly on documented historical facts and the content provided in the application.
 
 Core Themes to Defend with Nuance:
-1. Doctrine was not invented at Nicea; it was ratified based on early creeds (Phil 2).
-2. The Gnostic gospels were late (2nd/3rd century) and not "suppressed" eyewitness accounts.
-3. Christianity founded the university system and many scientists (Newton, Lemaitre) were believers.
-4. Christianity is Middle Eastern in origin, not a "white man's religion," and was pivotal in abolitionism (Wilberforce).
+1. Jesus of Nazareth is a historical figure, not a myth, and his story is not borrowed from Horus/Mithras.
+2. Doctrine was not invented at Nicea; it was ratified based on early creeds (Phil 2).
+3. The Gnostic gospels were late (2nd/3rd century) and not "suppressed" eyewitness accounts.
+4. Christianity founded the university system and many scientists (Newton, Lemaitre) were believers.
+5. Christianity is Middle Eastern in origin, not a "white man's religion," and was pivotal in abolitionism (Wilberforce).
 
 Tone: Academic, irenic (peaceful), factual, and concise.
 `;

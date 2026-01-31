@@ -3,11 +3,12 @@ import Hero from './components/Hero';
 import ChatWidget from './components/ChatWidget';
 import TimelineChart from './components/TimelineChart';
 import { SECTIONS, FRAMEWORKS, APP_NAME } from './constants';
-import { BookOpen, Scale, Globe, FlaskConical, Feather } from 'lucide-react';
+import { BookOpen, Scale, Globe, FlaskConical, Feather, Search } from 'lucide-react';
 
 // Icon mapping helper
 const getIcon = (id: string) => {
   switch (id) {
+    case 'origins': return <Search className="w-6 h-6 text-brand-gold" />;
     case 'doctrine': return <BookOpen className="w-6 h-6 text-brand-gold" />;
     case 'canon': return <Feather className="w-6 h-6 text-brand-gold" />;
     case 'science': return <FlaskConical className="w-6 h-6 text-brand-gold" />;
@@ -27,7 +28,7 @@ const App: React.FC = () => {
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-stone-600">
             {SECTIONS.map(s => (
-              <a key={s.id} href={`#${s.id}`} className="hover:text-brand-gold transition-colors">{s.title.split(' ')[0]}</a>
+              <a key={s.id} href={`#${s.id}`} className="hover:text-brand-gold transition-colors">{s.title.split(' ').slice(-1)}</a>
             ))}
             <a href="#frameworks" className="hover:text-brand-gold transition-colors">Frameworks</a>
           </div>
